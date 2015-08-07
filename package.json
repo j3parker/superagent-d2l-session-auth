@@ -2,7 +2,7 @@
   "name": "superagent-d2l-session-auth",
   "version": "0.11.0",
   "description": "A superagent plugin that adds D2L auth headers",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Brightspace/superagent-d2l-session-auth"
@@ -25,7 +25,7 @@
     "superagent": "^1.2.0"
   },
   "scripts": {
-    "pretest": "jshint index.js test",
+    "pretest": "jshint lib test",
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha test/*.js -- -R spec",
     "report-coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   }
